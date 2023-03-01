@@ -1,0 +1,12 @@
+# Versão da API 
+apiVersion: v1 
+# Tipo de recursos 
+kind: Pod 
+#metadados 
+metadata:
+  name: primeiro-pod-declarativo 
+spec: 
+  containers: 
+  # Como podemos ter diversos containers, usamos o (-)
+    - name: nginx
+      image: nginx:latest
