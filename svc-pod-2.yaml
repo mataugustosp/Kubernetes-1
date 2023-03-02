@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service 
+metadata: 
+  name: svc-pod-2
+spec: 
+  # Ao inves de container, agora iremos definir um tipo de service
+  type: ClusterIP
+  selector: 
+    #Chave para o serviço se conectar com o POD
+    app: segundo-pod
+  #Porta de conexão ao POD
+  ports: 
+    - port: 80
+    # podemos optar pod definir uma porta de despache diferente, dessa forma, devemos utilizar a diretica targetPort:80

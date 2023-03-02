@@ -2,9 +2,14 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod-2
+  #Ao criar uma label, adicionamos uma chave/valor 
+  labels:
+  #label chave valor 
+    app: segundo-pod 
 spec:
   containers:
     - name: container-1
       image: nginx:latest
+      # Posta que o POD recebe E despacha 
       ports: 
         - containerPort: 80 

@@ -4,6 +4,7 @@ apiVersion: v1
 kind: Pod 
 #metadados 
 metadata:
+  # Nome do Pod 
   name: primeiro-pod-declarativo 
 spec: 
   containers: 
