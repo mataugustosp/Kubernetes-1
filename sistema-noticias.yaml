@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod 
 metadata: 
-  name: sistemas-noticias
+  name: sistema-noticias
   labels:
-    app: sistema-noticias
+    app: sistemas-noticias
 spec: 
   containers: 
     - name: sistema-noticias-container 
