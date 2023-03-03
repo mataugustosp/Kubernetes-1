@@ -10,7 +10,6 @@ spec:
       image: aluracursos/mysql-db:1
       ports: 
         - containerPort: 3306 
-      env:
-        - name:
-          value: 
-
+      envFrom: 
+        - configMapRef: 
+            name: db-configmap

@@ -9,3 +9,4 @@ spec:
   ports:
     - port: 3306
       #Intuituvamente define-se o targetPort:80
+  
